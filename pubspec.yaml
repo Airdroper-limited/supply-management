@@ -1,50 +1,48 @@
-name: airdroper_crm
-description: A new Flutter project.
+# Project: Flutter-base Airdroper
+# Purpose: Testing integration of Flutter & Google Maps
+# Platforms:  Web, iOS and Android
+# Authors: www.base.com
 
-publish_to: 'none'
-
-version: 1.0.16+16
+name: baseairdroper
+description: Airdroper map tracking app.
+version: 1.0.0+1
 
 environment:
-  sdk: '>=2.12.2 <3.0.0'
+  sdk: ">=2.15.1 <3.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
 
-  cupertino_icons: ^1.0.4
-  http: ^0.13.4
-  file_picker: ^4.6.1
-  connectivity_plus: ^2.3.5
-  flutter_svg: ^1.1.0
-  intl: ^0.17.0
-  shared_preferences: ^2.0.15
-  fluttertoast: ^8.0.9
-  flutter_styled_toast: ^2.1.3
-  random_color: ^1.0.6-nullsafety
-  dropdown_search: ^5.0.2
-  textfield_tags: ^2.0.1
-  multiselect_formfield: ^0.1.7
-  flutter_quill: ^5.0.3
-  firebase_analytics: ^9.1.12
-  firebase_core: ^1.19.1
-  flutter_swipe_detector: ^2.0.0
-  
+  get_it: ^6.0.0
+  provider: ^5.0.0
+  cupertino_icons: ^1.0.2
+  flutter_animarker: ^3.2.0
+  google_maps_flutter_web: 0.3.2+1
+  google_maps_flutter: ^2.1.1
+  google_polyline_algorithm: ^3.1.0
+  geolocator: ^8.0.1
+  flutter_svg: ^1.0.3
+  flutter_rating_bar: ^4.0.0
+  lottie: ^1.2.2
+  shimmer: ^2.0.0
+  google_maps_webservice:
+    git:
+      url: https://github.com/mindfulme/google_maps_webservice
 
-flutter_icons:
-  android: "launcher_icon"
-  ios: true
-  image_path: "assets/images/new_logo.png"
+  uuid: ^3.0.5
+
+  touch_indicator: ^2.0.0
+  url_launcher: ^6.0.20
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
-  flutter_launcher_icons: ^0.9.2
+  flutter_lints: ^1.0.0
 
 flutter:
-
   uses-material-design: true
-
   assets:
-    - assets/images/
+    - assets/markers/
+    - assets/lottie/
